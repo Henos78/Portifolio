@@ -1,0 +1,392 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style for the NavBar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgb(228, 223, 213); */
+  position: relative;
+  top: 0;
+}
+.navbar ul {
+  display: flex;
+  float: right;
+  margin-right: 20px;
+  margin: 10px;
+}
+.navbar ul li {
+  font-family: cursive;
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 7px 13px;
+  border-radius: 3px;
+  transition: all, 1s ease;
+  text-transform: uppercase;
+}
+a.active:hover {
+  background: aqua;
+  transition: 0.5s;
+}
+.navbar ul li a:hover {
+  background-color: rgba(155, 136, 113, 0.808);
+  color: black;
+  box-shadow: 0 0 10px white;
+}
+header {
+  font-family: cursive;
+  font-size: large;
+  text-align: center;
+  background: rgba(250, 247, 243, 0.808);
+  font-weight: bolder;
+}
+footer {
+  font-family: cursive;
+  font-size: large;
+  text-align: center;
+  background: rgba(250, 247, 243, 0.808);
+  font-weight: bolder;
+}
+
+/* Style for the Home section */
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: none;
+  margin: auto;
+}
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.1;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 20%;
+  right: 25%;
+}
+.headings {
+  font-family: cursive;
+  font-size: 3rem;
+  text-align: center;
+  margin: 40px 0px;
+}
+.headings2 {
+  font-family: cursive;
+  font-size: 3rem;
+  text-align: center;
+  margin: 40px 0px;
+  color: aliceblue;
+}
+.btn {
+  padding: 10px 35px;
+  background-color: transparent;
+  border: 1px solid rgb(17, 16, 16);
+  color: black;
+  outline: none;
+  transition: 0.3s all ease;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 50px;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: rgba(155, 136, 113, 0.808);
+  box-shadow: 0 0 5px black, 0 0 10px black, 0 0 15px black;
+  font-weight: bold;
+}
+.video1 video {
+  height: 100vh;
+  width: 100%;
+  background-position: absolute;
+  z-index: 10;
+  object-fit: cover;
+  opacity: 0.8;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style for the About me section */
+#about {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+  background: rgba(236, 236, 236, 0.534);
+  margin: auto;
+}
+#about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.1;
+}
+#me {
+  display: flex;
+}
+#me img {
+  display: flex;
+  justify-content: left;
+  align-self: left;
+  width: 300px;
+  left: 10%;
+  position: right;
+  border-radius: 50px;
+  /* top: 20%; */
+  margin: 10px;
+}
+#about h1 {
+  font-family: cursive;
+  font-size: 3rem;
+  text-align: center;
+  margin: 40px 0px;
+  border-bottom: 2px solid black;
+}
+#intro {
+  font-family: cursive;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 10px;
+}
+#intro h2 {
+  font-family: cursive;
+  font-size: 2rem;
+  text-align: center;
+  margin: 40px 0px;
+  margin-bottom: 20px;
+}
+.table {
+  border-collapse: collapse;
+  margin: 5px 0;
+  font-size: 0.4cm;
+  min-width: 40px;
+}
+.table th {
+  background-color: #009879;
+  color: black;
+  text-align: left;
+  font-weight: bold;
+}
+.content th,
+.content tr {
+  padding: 12px 15px;
+}
+.content tr {
+  border-bottom: 1px solid#dddddd;
+}
+.table tr:nth-of-type(even) {
+  background-color: lightgrey;
+}
+.table td {
+  padding: 5px;
+}
+/* Style for the Education section */
+
+#education {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: right;
+  right: 10%;
+  background: url(../assets/456.jpg);
+  margin: auto;
+}
+#education::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.1;
+}
+.main2 {
+  font-family: cursive;
+  display: flex;
+  flex-direction: column;
+}
+#list {
+  font-family: cursive;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 20px;
+  margin-top: 0px;
+}
+#education h1 {
+  font-family: cursive;
+  font-size: 3rem;
+  text-align: center;
+  margin: 50px 50px;
+  margin-top: 20px;
+  border-bottom: 2px solid black;
+}
+
+/* Style for Experience  section*/
+
+#experience {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: right;
+  right: 10%;
+  background-color: rgba(236, 236, 236, 0.877);
+  margin: auto;
+}
+#experience::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.1;
+}
+.main3 {
+  font-family: cursive;
+  display: flex;
+  flex-direction: column;
+}
+#list2 {
+  font-family: cursive;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 20px;
+  margin-top: 0px;
+}
+#experience h1 {
+  font-family: cursive;
+  font-size: 3rem;
+  text-align: center;
+  margin: 50px 50px;
+  margin-top: 20px;
+  border-bottom: 2px solid black;
+}
+/* Style for Awards and Acheievements section */
+
+#awards {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: right;
+  right: 10%;
+  background-color: rgba(236, 236, 236, 0.877);
+  margin: auto;
+}
+#awards::before {
+  content: "";
+  position: absolute;
+  top: 10;
+  right: 0;
+  z-index: -1;
+  opacity: 0.1;
+}
+.main4 {
+  font-family: cursive;
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+}
+
+#awards h1 {
+  font-family: cursive;
+  font-size: 3rem;
+  text-align: center;
+  margin: 50px 50px;
+  margin-top: 20px;
+  border-bottom: 2px solid black;
+}
+.list3 {
+  font-family: cursive;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 20px;
+  margin: 20px;
+}
+
+/* Style for the Contact me Section */
+#contact {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: center;
+  background-color: rgba(236, 236, 236, 0.877);
+  color: black;
+  padding: 20px;
+  font-family: cursive;
+  margin: auto;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  margin: 20px 0px;
+}
+.input {
+  padding: 10px;
+  margin: 15px;
+  width: 20%;
+  border: none;
+  outline: auto;
+}
+#msg {
+  width: 30%;
+  padding: 10px;
+  margin: 15px;
+  border: none;
+  outline-style: auto;
+  font-family: cursive;
+}
+#send {
+  width: 10%;
+  padding: 10px;
+  margin: 40px;
+  border: 2;
+  outline: none;
+  font-family: cursive;
+}
+#send:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px white;
+  font-family: cursive;
+}
+#contact h1 {
+  font-family: cursive;
+  font-size: 3rem;
+  text-align: center;
+  margin: 50px 50px;
+  margin-top: 20px;
+  border-bottom: 2px solid black;
+}
